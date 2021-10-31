@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>SPOILER DETAILS</title>
+<style>
+ @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+/* SPOILER */
+details.eleg2 > summary {
+	list-style: none;
+	cursor: pointer;
+	font-weight: bold;
+	font-variant:small-caps;
+	font-size:1.15em;
+	display:block;
+	clear:both;
+	margin:6px 12px;
+	border:0px solid blue;
+	}
+details.eleg2 > summary::-webkit-details-marker {display: none;}
+summary:after {
+	background: #fff;
+	border-radius: 5px;
+	font-family: fontAwesome;
+	content: "\f07b";
+	color: #263278;
+	float: left;
+	font-size: 1.25em;
+	font-weight: bold;
+	margin: -5px 10px 0 0;
+	padding: 0;
+	text-align: center;
+	width: 20px;
+	}
+details.eleg2[open] summary {background:white;border-top:1px dashed #263278;border-bottom:1px dotted #263278;}
+details.eleg2[open] summary:after {
+	background: #fff;
+	font-family: fontAwesome;
+	content: "\f07c";		
+	}
+details.eleg2:after { /*Elimina alunecarea (float) - poate fi folosit, preponderent, cu DIV-uri*/
+	content: "";
+	display: table;
+	clear: both;
+	}
+/* details.eleg2 {background: red;	}*/
+details.eleg2 > .details_content {
+	background: white;
+	margin:0px 12px 0 36px;
+	padding: 0 0 0 12px;
+	border:0px solid gray;
+	}	
+/* SUB-tab*/	
+details.eleg2[open] details {	background: RGBA(214, 237, 255,0.5);	padding:3px 6px;}
+details.eleg2[open] details summary{
+	background: RGBA(214, 237, 255,0.5);
+	border-top:0px dashed #263278;border-bottom:0px dotted #263278;
+	font-weight:bold;
+	cursor: pointer;
+	}
+details.eleg2[open] details summary:after{
+	border-radius: 5px;
+	content: "";
+}
+details.eleg2[open] details[open] summary {background:#263278;color:white; border-top:0px dashed #263278;border-bottom:0px dotted #263278;}	
+details.eleg2[open] details > .details_content {
+	background: white;
+	margin:0px;
+	padding: 0 0 0 12px;
+	border:0px solid gray;
+	}	
+</style>
+</head>
+<body>
+<details class="eleg2">
+	<summary>C2 TRAINING COURSE</summary>
+	<div class="details_content">
+		<details class="">
+			<summary>C2 case studies per institutions</summary>
+			<div class="details_content">...</div>
+		</details>	
+		<details class="">
+			<summary>Certificate individuale ASOCIATI</summary>
+			<div class="details_content">...</div>
+		</details>	
+		<details class="">
+			<summary>Certificates C2 Telespa</summary>
+			<div class="details_content">...</div>
+		</details>	
+		<details class="">
+			<summary>Participanti</summary>
+			<div class="details_content">...</div>
+		</details>			
+	</div>
+</details>	
+</body>
+</html>
