@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,12 +37,11 @@ details.eleg2[open] summary:after {
 	font-family: fontAwesome;
 	content: "\f07c";		
 	}
-details.eleg2:after { /*Elimina alunecarea (float) - poate fi folosit, preponderent, cu DIV-uri*/
+details.eleg2:after {/*Removes floating (float) - it can be used mainly with DIVs*/
 	content: "";
 	display: table;
 	clear: both;
 	}
-/* details.eleg2 {background: red;	}*/
 details.eleg2 > .details_content {
 	background: white;
 	margin:0px 12px 0 36px;
@@ -51,17 +49,17 @@ details.eleg2 > .details_content {
 	border:0px solid gray;
 	}	
 /* SUB-tab*/	
-details.eleg2[open] details {	background: RGBA(214, 237, 255,0.5);	padding:3px 6px;}
+details.eleg2[open] details {background: RGBA(214, 237, 255,0.5); padding:3px 6px;}
 details.eleg2[open] details summary{
 	background: RGBA(214, 237, 255,0.5);
 	border-top:0px dashed #263278;border-bottom:0px dotted #263278;
 	font-weight:bold;
 	cursor: pointer;
 	}
-details.eleg2[open] details summary:after{
+details.eleg2[open] details summary:after {
 	border-radius: 5px;
 	content: "";
-}
+	}
 details.eleg2[open] details[open] summary {background:#263278;color:white; border-top:0px dashed #263278;border-bottom:0px dotted #263278;}	
 details.eleg2[open] details > .details_content {
 	background: white;
